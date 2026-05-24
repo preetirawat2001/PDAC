@@ -1,0 +1,6 @@
+Dataset,Path,Rows,Columns,Description
+Discovery drug response data,data/raw/pan_data.csv,2223,22,Raw PDAC pharmacogenomic drug response associations
+Processed drug response data,data/processed/processed_drug_data (2).csv,1974,16,Cleaned response table used for downstream modeling
+Scaled modeling data,data/processed/scaled_Data.csv,1974,25,Feature-scaled dataset with encoded variables and response labels
+Biomarker validation data,data/raw/shrunk_biomarker_validation.csv,1406,25,External CCLE/DepMap biomarker validation subset
+CRISPR validation data,data/raw/shrunk_crispr_validation.csv,1208,19,External DepMap CRISPR dependency validation subset

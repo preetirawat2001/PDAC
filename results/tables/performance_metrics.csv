@@ -1,0 +1,12 @@
+Model,Evaluation,Accuracy,Precision,Recall,F1,ROC_AUC,R2,MSE,Notes
+Stacked Ensemble,Internal classification,0.9924,,,,1.000,,,Notebook cell output
+Stacked Ensemble + ElasticNet,Internal classification,0.9949,,,,1.000,,,Notebook cell output
+ElasticNet,Grouped cross-validation,0.946827,0.929280,0.968499,0.948351,,0.956926,0.001404,Grouped CV summary
+RandomForest,Grouped cross-validation,0.988864,0.989290,0.988680,0.988939,,0.993008,0.000234,Grouped CV summary
+XGBoost,Grouped cross-validation,0.990396,0.991379,0.989569,0.990385,,0.996042,0.000132,Grouped CV summary
+MultiTask_DNN,Internal test,0.937200,0.899200,0.984800,0.940000,,0.946700,0.001700,Notebook summary table
+GNN Edge Predictor,Drug-feature edge prediction,,,,,,0.997942,0.000073,Final test output
+Bayesian Hierarchical Model,Posterior predictive evaluation,,,,,,0.362996,0.020842,Notebook output
+CCLE / DepMap Baseline,External validation,0.4346,,,,0.5058,,,Before domain alignment
+CCLE / DepMap Domain Aligned,External validation,0.8236,,,,0.9183,,,After domain alignment
+DepMap CRISPR Domain Aligned,External validation,0.7864,,,,0.8818,,,Functional validation
